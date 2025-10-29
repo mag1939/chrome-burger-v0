@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome & Burger</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Chrome & Burger</h1>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <svg
+                class="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+            >
+                <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="M5 7h14M5 12h14M5 17h10"
+                />
+            </svg>
+        </button>
+        <nav>
+            <ul id="primary-navigation" class="primary-navigation">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="assets/jpeg/BurgerTruck.jpeg" alt="Chrome & Burger Food Truck">
+            <h2>The Best Burgers in Town</h2>
+            <p>Made with fresh, locally-sourced ingredients.</p>
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <img src="assets/jpeg/TheAllAmerican.jpeg" alt="The All American Burger">
+                <h3>Classic Burger</h3>
+                <p>A juicy beef patty with lettuce, tomato, and our special sauce.</p>
+                <p>Price: $10</p>
+            </article>
+            <article>
+                <img src="assets/jpeg/TheAlohaBurger.jpeg" alt="The Aloha Burger">
+                <h3>Aloha Burger</h3>
+                <p>The classic burger with a slice of pineapple and teriyaki sauce.</p>
+                <p>Price: $12</p>
+            </article>
+            <article>
+                <img src="assets/jpeg/BaconCheeseburger.jpeg" alt="Bacon Cheeseburger">
+                <h3>Bacon Burger</h3>
+                <p>The classic burger with crispy bacon.</p>
+                <p>Price: $12</p>
+            </article>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a family-owned food truck serving up delicious burgers since 2023.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Follow us on social media or send us an email.</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+            <p>Email: <a href="mailto:contact@chromeandburger.com">contact@chromeandburger.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Chrome & Burger</p>
+    </footer>
+    <script>
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const primaryNav = document.querySelector('.primary-navigation');
+
+        mobileNavToggle.addEventListener('click', () => {
+            const isVisible = primaryNav.classList.toggle('active');
+            mobileNavToggle.setAttribute('aria-expanded', isVisible);
+        });
+    </script>
+</body>
+</html>

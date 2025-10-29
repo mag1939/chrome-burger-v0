@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Navigation */
+.primary-navigation {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.primary-navigation li {
+    margin-left: 2rem;
+}
+
+.primary-navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.primary-navigation a:hover {
+    color: #007bff; /* Accent color */
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+    display: none;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Menu Section */
+#menu article {
+    border: 1px solid #eee;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+#menu article h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+#menu article p:last-of-type {
+    font-weight: bold;
+    color: #007bff; /* Accent color */
+}
+
+/* About and Contact Sections */
+#about, #contact {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #eee;
+    color: #666;
+}
+
+/* Hero Section */
+#hero img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+/* Menu Section */
+#menu article img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .primary-navigation {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 1rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .primary-navigation.active {
+        display: block;
+    }
+
+    .primary-navigation li {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+}
